@@ -1,84 +1,83 @@
-# colorblindassist
-Color Blindness Assistance System that performs CVD (Color Vision Deficiency) simulation and correction using Machado-style transformation matrices, Colorspacious perceptual color space modeling, Error-redistribution daltonization, Live webcam processing. This project helps color-blind users distinguish colors by simulating how world looks to them.
+# Daltonization Assistant
 
-# 🎨 Color Blindness Assistant — Machado-Style Daltonization
+A real-time computer vision tool that helps color-blind users perceive 
+colors more clearly.
 
-This project implements a Computer Vision–based Color Blindness Assistant that performs **Color Vision Deficiency (CVD) simulation and daltonization correction** for both images and real-time webcam feeds. It enhances color distinguishability for users with color blindness by modeling how colors are perceived under CVD and then applying corrective color redistribution to improve visual contrast.
+This project captures live video from the webcam, simulates different 
+types of color blindness, and applies daltonization algorithms to enhance 
+color perception.
 
-The system combines two approaches: **Machado-style transformation matrices** for physiologically inspired CVD simulation and **perceptual color space conversion using the Colorspacious library** for severity-controlled modeling. It supports Deuteranopia / Deuteranomaly simulation and adaptive daltonization with adjustable severity levels.
+## Features
 
----
+* Real-time webcam processing
+* Color blindness simulation
+* Daltonization correction
+* Adjustable severity slider
+* Multiple modes:
 
-## 🚀 Features
+  * Protanopia
+  * Deuteranopia
+  * Tritanopia
 
-- Machado matrix–based CVD simulation  
-- Perceptual CVD modeling with adjustable severity (0–100%)  
-- Daltonization using error redistribution  
-- Static image processing and visualization  
-- Real-time webcam daltonization  
-- Multi-severity comparison grids  
-- Interactive severity control via keyboard  
-- Modular and extensible processing pipeline  
+## Tech Stack
 
----
+* Python
+* OpenCV
+* NumPy
+* Colorspacious
 
-## 🧠 Method Overview
+## Controls
 
-**CVD Simulation**
-- Convert image to normalized RGB
-- Apply Machado Deuteranopia matrix OR Colorspacious CVD transform
-- Generate simulated color-blind perception
+| Key | Function          |
+| --- | ----------------- |
+| 1   | Protanopia Mode   |
+| 2   | Deuteranopia Mode |
+| 3   | Tritanopia Mode   |
+| q   | Quit Application  |
 
-**Daltonization**
-- Compute perceptual color error between original and simulated image
-- Redistribute error into visible spectrum
+## Installation
 
+Clone the repository:
 
-This improves contrast between confusing color pairs while preserving scene structure.
+```
+git clone https://github.com/Vithika2005/colorblindassist.git 
+cd daltonization-assistant
+```
 
----
+Create virtual environment:
 
-## 📷 Modes
+```
+python3 -m venv venv
+source venv/bin/activate
+```
 
-### Image Mode
-- Loads static images
-- Displays original, simulated, and daltonized outputs
-- Supports multi-severity visualization panels
+Install dependencies:
 
-### Webcam Mode
-- Real-time frame-by-frame daltonization
-- On-screen severity indicator
+```
+pip install -r requirements.txt
+```
 
----
+Run the program:
 
-## 🛠 Tech Stack
+```
+python daltonization.py
+```
 
-- Python  
-- OpenCV  
-- NumPy  
-- Matplotlib  
-- Colorspacious  
+## Project Structure
 
----
+```
+daltonization-assistant
+│
+├── daltonization.py
+├── requirements.txt
+├── README.md
+└── venv/
+```
 
-## ♿ Applications
+## Future Improvements
 
-- Accessibility vision filters  
-- UI contrast enhancement  
-- AR preprocessing layers  
-- Educational visualization tools  
-- Assistive vision systems  
-
----
-
-## 🔮 Future Improvements
-
-- Support for Protanopia and Tritanopia  
-- Object + color name detection with audio output  
-- Mobile and web deployment  
-- AR overlay integration  
-- Pattern-based color substitution  
-- User evaluation studies  
-
----
+* Three-panel visualization (Original | Simulated | Daltonized)
+* Mobile camera support
+* Streamlit web interface
+* Real-time performance optimization
 
