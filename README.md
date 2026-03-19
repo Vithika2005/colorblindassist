@@ -78,6 +78,7 @@ streamlit run app.py
 ## 🎬 Demo
 
 <img src="https://raw.githubusercontent.com/Vithika2005/colorblindassist/main/final_app/assets/demo.gif" width="800"/>
+
 ## 🔄 Project Evolution
 
 ### 🥉 Step 1: Basic Daltonization
