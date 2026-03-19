@@ -75,10 +75,10 @@ streamlit run app.py
 ```markdown
 ## 🏗 Architecture
 
-![Architecture](final_app/assets/architecture.png)
+![Architecture](https://github.com/Vithika2005/colorblindassist/blob/main/final_app/assets/architecture.png)
 
 2. Demo 
-![Demo](final_app/assets/demo.gif)
+![Demo](https://github.com/Vithika2005/colorblindassist/blob/main/final_app/assets/demo.gif)
 
 ## 🔄 Project Evolution
 
