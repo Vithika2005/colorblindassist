@@ -63,7 +63,7 @@ corrected = original + 0.7 * error
 ## ▶️ Run Locally
 
 ```bash
-git clone <repo>
+git clone https://github.com/Vithika2005/colorblindassist.git 
 cd colorblind-assistant
 python3.10 -m venv venv
 source venv/bin/activate
@@ -85,13 +85,17 @@ streamlit run app.py
 ### 🥉 Step 1: Basic Daltonization
 - Initial implementation using simple correction
 - Limited accuracy
+- Only Deuteranopia
 
 ### 🥈 Step 2: Colorspacious Integration
 - Introduced perceptual color modeling
 - Improved simulation accuracy
+- All types of Colourblindedness
 
 ### 🥇 Final: Real-Time Assistant
 - Streamlit UI
 - Ishihara-based detection
+- Real Time FPS
+- Daltonization function for correction
 - Severity tuning
 - Real-time image correction
