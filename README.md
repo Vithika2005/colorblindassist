@@ -75,10 +75,10 @@ streamlit run app.py
 ```markdown
 ## 🏗 Architecture
 
-![Architecture](assets/architecture.png)
+![Architecture](final_app/assets/architecture.png)
 
 2. Demo 
-![Demo](assets/demo.gif)
+![Demo](final_app/assets/demo.gif)
 
 ## 🔄 Project Evolution
 
