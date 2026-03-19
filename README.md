@@ -2,7 +2,6 @@
 
 A real-time computer vision tool that helps color-blind users perceive 
 colors more clearly.
-
 This project captures live video from the webcam, simulates different 
 types of color blindness, and applies daltonization algorithms to enhance 
 color perception.
