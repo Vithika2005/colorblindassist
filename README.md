@@ -71,14 +71,11 @@ pip install -r requirements.txt
 streamlit run app.py
 
 ---
-1. Add your architecture image:
-```markdown
 ## 🏗 Architecture
+![Architecture](https://raw.githubusercontent.com/Vithika2005/colorblindassist/main/final_app/assets/architecture.png)
 
-![Architecture](https://github.com/Vithika2005/colorblindassist/blob/main/final_app/assets/architecture.png)
-
-2. Demo 
-![Demo](https://github.com/Vithika2005/colorblindassist/blob/main/final_app/assets/demo.gif)
+## 🎬 Demo
+![Demo](https://raw.githubusercontent.com/Vithika2005/colorblindassist/main/final_app/assets/demo.gif)
 
 ## 🔄 Project Evolution
 
