@@ -72,11 +72,12 @@ streamlit run app.py
 
 ---
 ## 🏗 Architecture
-![Architecture](https://raw.githubusercontent.com/Vithika2005/colorblindassist/main/final_app/assets/architecture.png)
+
+<img src="https://raw.githubusercontent.com/Vithika2005/colorblindassist/main/final_app/assets/architecture.png" width="800"/>
 
 ## 🎬 Demo
-![Demo](https://raw.githubusercontent.com/Vithika2005/colorblindassist/main/final_app/assets/demo.gif)
 
+<img src="https://raw.githubusercontent.com/Vithika2005/colorblindassist/main/final_app/assets/demo.gif" width="800"/>
 ## 🔄 Project Evolution
 
 ### 🥉 Step 1: Basic Daltonization
