@@ -1,46 +1,73 @@
 # Color Blindness Assistant
 
-A real-time accessibility tool that helps colorblind users perceive colors more accurately using **Daltonization** and **color vision deficiency simulation**.
+An intelligent, real-time accessibility system that helps colorblind users **see**, **understand**, and **interact** with the world more clearly using **Daltonization**, **perceptual simulation**, and **AI-powered scene understanding**.
 
 ---
 
 ## Problem
 
-Over **300 million people worldwide** suffer from color vision deficiency.
-
+Over **300 million people worldwide** live with color vision deficiency.
 They struggle with:
-
-- UI design (buttons, alerts)
 - Traffic signals
-- Graphs and charts
-- Everyday visual perception
+- Graphs & data visualizations
+- UI/UX elements (buttons, alerts)
+- Everyday object recognition
+Color isn’t just aesthetic — it’s **Information**.
+And for millions, that information is broken.
 
 ---
 
-## 💡 Solution
+## Solution
 
-This project provides:
+We built a real-time assistive system that:
 
-- 🎥 Real-time webcam color correction  
-- 🎚 Severity adjustment  
-- 👁 Ishihara-based detection  
-- 🧠 Adaptive correction based on deficiency  
+- Corrects colors LIVE using Daltonization
+- Adapts to severity of color blindness
+- Detects deficiency using Ishihara tests
+- Explains the scene using AI (Vision-Language Model)
 
----
-
-## ⚙️ Tech Stack
-
-- Python  
-- OpenCV  
-- Streamlit  
-- Colorspacious  
+Not just “see better” — but understand better
 
 ---
 
+## Tech Stack
+
+- Python
+- OpenCV (real-time image processing)
+- Streamlit (interactive UI)
+- Colorspacious (perceptual color modeling)
+- BLIP (Vision-Language Model) (AI scene understanding) 
+
+---
+
+## Key Innovation
+
+Unlike traditional filters, our system:
+
+- Simulates how users perceive color
+- Calculates lost color information
+- Reinjects that information using Daltonization
+- Enhances perception in real-time
+
+---
 ## 🔬 How It Works
 
 ### Pipeline
-Frame → Simulate CVD → Compute Error → Apply Daltonization → Output
+Webcam Frame
+     ↓
+Convert BGR → RGB
+     ↓
+Normalize (0–1)
+     ↓
+Simulate Color Blindness (CVD)
+     ↓
+Compute Color Loss (Error)
+     ↓
+Apply Daltonization Correction
+     ↓
+Display Corrected Output
+     ↓
+AI Caption Generation (BLIP)
 
 
 ### Formula
@@ -50,17 +77,19 @@ corrected = original + 0.7 * error
 
 ---
 
-## 🧪 Features
+## Features
 
-- Protanopia / Deuteranopia / Tritanopia modes  
-- Severity slider  
-- Image upload support  
-- Ishihara test integration  
-- Real-time correction  
+- Protanopia / Deuteranopia / Tritanopia modes
+- Severity slider (adaptive correction)
+- Real-time webcam processing (FPS optimized)
+- Image upload support
+- Ishihara-based detection
+- AI-generated scene descriptions 🧠
+- Live assistive feedback
 
 ---
 
-## ▶️ Run Locally
+## Run Locally
 
 ```bash
 git clone https://github.com/Vithika2005/colorblindassist.git 
@@ -70,37 +99,42 @@ source venv/bin/activate
 pip install -r requirements.txt
 streamlit run app.py
 
----
-## 🏗 Architecture
+## Architecture
 
 <img src="https://raw.githubusercontent.com/Vithika2005/colorblindassist/main/final_app/assets/architecture.png" width="800"/>
 
-## 🎬 Demo
+## Demo
 
 <img src="https://raw.githubusercontent.com/Vithika2005/colorblindassist/main/final_app/assets/demo.gif" width="800"/>
 
-## 🔄 Project Evolution
+Project Evolution
+- Step 1: Basic Daltonization
+Simple correction logic
+Limited to single deficiency
+- Step 2: Colorspacious Integration
+Accurate perceptual simulation
+Support for all CVD types
+- Final System: Real-Time Assistant
+Streamlit UI
+Ishihara detection
+Real-time processing
+Severity tuning
+- Final Upgrade: AI Vision (VLM)
+BLIP model integration
+Scene understanding
+Assistive description for users
 
-### 🥉 Step 1: Basic Daltonization
-- Initial implementation using simple correction
-- Limited accuracy
-- Only Deuteranopia
 
-### 🥈 Step 2: Colorspacious Integration
-- Introduced perceptual color modeling
-- Improved simulation accuracy
-- All types of Colourblindedness
+Impact
+This tool can:
+- Improve accessibility for colorblind users
+- Help designers build inclusive interfaces
+- Assist in education & awareness
+- Support healthcare screening
 
-### Final: Real-Time Assistant
-- Streamlit UI
-- Ishihara-based detection
-- Real Time FPS
-- Daltonization function for correction
-- Severity tuning
-- Real-time image correction
-
-## Project Evolution
-- **Step 1:** Basic Daltonization using OpenCV
-- **Step 2:** Improved simulation using Colorspacious
-- **Final App:** Real-time Streamlit app with webcam + Ishihara test
-- **Final VLM Version:** Added AI-based scene understanding using BLIP
+Future Scope
+- Mobile app (real-world deployment)
+- Browser extension
+- Object detection + highlighting
+- Voice-based assistance
+- Personalized adaptive models
