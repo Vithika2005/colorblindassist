@@ -91,7 +91,6 @@ corrected = original + 0.7 * error
 
 ## Run Locally
 
-```bash
 git clone https://github.com/Vithika2005/colorblindassist.git 
 cd colorblind-assistant
 python3.10 -m venv venv
