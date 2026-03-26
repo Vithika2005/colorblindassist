@@ -1,10 +1,10 @@
-# 🚀 Color Blindness Assistant
+# Color Blindness Assistant
 
 A real-time accessibility tool that helps colorblind users perceive colors more accurately using **Daltonization** and **color vision deficiency simulation**.
 
 ---
 
-## 🎯 Problem
+## Problem
 
 Over **300 million people worldwide** suffer from color vision deficiency.
 
@@ -52,11 +52,11 @@ corrected = original + 0.7 * error
 
 ## 🧪 Features
 
-- ✅ Protanopia / Deuteranopia / Tritanopia modes  
-- ✅ Severity slider  
-- ✅ Image upload support  
-- ✅ Ishihara test integration  
-- ✅ Real-time correction  
+- Protanopia / Deuteranopia / Tritanopia modes  
+- Severity slider  
+- Image upload support  
+- Ishihara test integration  
+- Real-time correction  
 
 ---
 
@@ -91,10 +91,16 @@ streamlit run app.py
 - Improved simulation accuracy
 - All types of Colourblindedness
 
-### 🥇 Final: Real-Time Assistant
+### Final: Real-Time Assistant
 - Streamlit UI
 - Ishihara-based detection
 - Real Time FPS
 - Daltonization function for correction
 - Severity tuning
 - Real-time image correction
+
+## Project Evolution
+- **Step 1:** Basic Daltonization using OpenCV
+- **Step 2:** Improved simulation using Colorspacious
+- **Final App:** Real-time Streamlit app with webcam + Ishihara test
+- **Final VLM Version:** Added AI-based scene understanding using BLIP
